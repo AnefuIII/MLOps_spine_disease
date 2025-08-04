@@ -30,10 +30,33 @@ The repository is organized into modules corresponding to the MLOps Zoomcamp cur
 
 Each folder contains its own README with specific setup and usage instructions. Start with the first module and work through each one sequentially.
 
+### ⚠️ **Important: Virtual Environment Isolation**
+
+**Each module should run in its own virtual environment** due to conflicting dependencies across different MLOps tools and frameworks:
+
+- **01_mlopszc_EDA_model_training/**: MLflow, scikit-learn, pandas, numpy
+- **mlopszc_proj_orc/**: Mage AI, specific orchestration dependencies  
+- **03_mlopszc_web_deployment/**: Flask, pipenv, Docker dependencies
+- **04_mlopszc_monitoring/**: Evidently, Prometheus, Grafana dependencies
+- **05_mlopszc_best_practices/**: Testing, linting, CI/CD tools
+
+### Setup Workflow
+
+```bash
+# For each module, create isolated environment:
+cd module_directory/
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# or .venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+# Follow module-specific instructions...
+```
+
 ## Requirements
 
 - Python 3.8+
 - Docker
+- Virtual environment management (venv, conda, or similar)
 - Basic knowledge of machine learning and Python programming
 
 ## License
