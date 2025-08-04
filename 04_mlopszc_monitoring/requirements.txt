@@ -1,0 +1,18 @@
+#prefect==3.4.10
+evidently>=0.4.0
+tqdm
+requests
+joblib
+pyarrow
+pydantic==1.10.13
+psycopg
+psycopg_binary
+pandas
+numpy==1.26.4
+scikit-learn
+jupyter
+ipywidgets
+
+#conda create -n evidently-env python=3.11
+#conda activate evidently-env
+#pip install evidently==0.3.3 pydantic==1.10.13

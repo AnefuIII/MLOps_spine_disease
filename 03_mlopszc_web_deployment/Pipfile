@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-learn = "==1.7.0"
+flask = "==1.1.2"
+numpy = "==2.3.1"
+jinja2 = "<3.0"
+markupsafe = "<2.0.0"
+itsdangerous = "<2.0.0"
+werkzeug = "<2.0.0"
+requests = "*"
+gunicorn = "*"
+pandas = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.3"
